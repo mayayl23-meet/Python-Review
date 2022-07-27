@@ -1,5 +1,3 @@
-videodict = {}
-
 def create_youtube_video(title,description):
 	videodict = {"title":title, "description":description, "likes":0, "dislikes":0, "comments": {"username":{}}}
 	return videodict
@@ -21,7 +19,6 @@ def dislike(youtubevideo):
 
 
 
-
 def add_comment(youtubevideo, username, comment_text):
 	videodict=youtubevideo
 	videodict['comments']['username'] = comment_text
@@ -35,6 +32,6 @@ add_comment(dict1, "maya", "hello")
 
 print(dict1)
 
-newvideodict = {}
 
 newvideodict = {"title": 'How To Make Coffee', "description": 'a short video about how to make the best coffee', "likes": 495, "dislikes": 0, "comments":{"maya":{'so interesting'}}}
+
